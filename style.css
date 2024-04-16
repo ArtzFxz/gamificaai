@@ -58,6 +58,10 @@ header img{
     width: 290px;
 }
 
+header button {
+    display: none;
+}
+
 .menu {
     width: 700px;
 
@@ -459,4 +463,78 @@ footer .container-grid {
 
 .icones-redes a:hover {
     color: var(--laranja-gamifica);
+}
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: white;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #000000e0;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+    }
+
+    #sobre {
+        padding: 100px 15%;
+    }
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 400px;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+    }
+
+    footer {
+        height: unset;
+    }
+    
+    footer .container-grid {
+        padding: 80px;
+        
+        flex-direction: column;
+
+    }
 }
