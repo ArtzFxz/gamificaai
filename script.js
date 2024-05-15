@@ -73,3 +73,11 @@ const mostrarSlideAnterior = () => {
 
     banner.classList.add(slides[slideAtual])
 }
+
+const selecionarSlide = (indiceSlide) => {
+    slides.forEach( slide => banner.classList.remove(slide) )
+
+    slideAtual = indiceSlide
+
+    banner.classList.add(slides[indiceSlide])
+}
