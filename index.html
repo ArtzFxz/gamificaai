@@ -80,15 +80,15 @@
     <section id="contato">
         <h2>Contate-nos</h2>
 
-        <form>
+        <form onsubmit="solicitarOrcamento(event)">
             <div class="campo">
                 <label for="campo-nome">Qual é o seu nome?</label>
-                <input id="campo-nome" type="text" placeholder="Digite seu nome...">
+                <input required id="campo-nome" type="text" placeholder="Digite seu nome...">
             </div>
 
             <div class="campo">
                 <label for="campo-email">Em qual email podemos te responder?</label>
-                <input type="email" name="" id="campo-email" placeholder="Digite seu email...">
+                <input required type="email" name="" id="campo-email" placeholder="Digite seu email...">
             </div>
 
             <div class="campo-textarea">
